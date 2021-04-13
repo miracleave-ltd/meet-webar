@@ -66,9 +66,10 @@ Git（GitHub, GitLab, Bitbucket に対応）とVercelを連携させることが
 また、```now```というコマンドで簡単にデプロイできる点も魅力です。
 
 ### ⑵Vercel（バーセル）のアカウント登録
-1. 以下にアクセスしてください。
+1. 以下にアクセスしてください。<BR>
 　https://vercel.com/signup
 2. Githubアカウントでログインしてください。
+![image](https://user-images.githubusercontent.com/66664167/114530379-d7cc3580-9c85-11eb-9438-4a97b98e69ff.png)
 
 ### ⑶ローカル環境からVercel（バーセル）へのログイン
 1. 以下コマンドを実行
@@ -99,17 +100,9 @@ now
 4.  ```ユーザー名```を入力し、Enterを押してください。
 5. 「Link to existing project?」と求められるので```N```を入力し、Enterを押してください。
 6. 「Want to override the settings?」と求められるので```N```を入力し、Enterを押してください。
-7. ZEITのダッシュボードにアクセスすると、デプロイした「webvr-main」フォルダが配置されていることを確認すしましょう。
-
-```
-https://vercel.com/dashboard
-```
-![image](https://user-images.githubusercontent.com/66664167/114528631-28429380-9c84-11eb-86c4-726f244738d2.png)
-
-5. ダッシュボードにアクセスし、「VISIT」からデプロイした内容にアクセスし、QRコードが表示されることを確認しましょう。
-![image](https://user-images.githubusercontent.com/66664167/114528666-2e387480-9c84-11eb-9080-d5c491f5edc2.png)
-
-6. QRコードをスマートフォンのカメラ機能で読み取って、ARを動かしてみよう。
+7. コマンド実行結果に、アクセス先が記載されているのでアクセスしてみよう。
+![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
+8. QRコードをスマートフォンのカメラ機能で読み取って、ARを動かしてみよう。
 
 
 # 【Step3】応用編：WebARに好きな文字を表示してみよう
@@ -146,8 +139,19 @@ https://msdf-bmfont.donmccurdy.com/
 </html>
 ```
 
-4. 以下コマンドを実行し、デプロイが終わったら、アクセス
+4. 以下コマンドを実行し、再デプロイをしてみましょう。
 
 ```
 now
 ```
+
+5. コマンド実行結果に、アクセス先が記載されているのでアクセスしてみよう。
+![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
+
+
+# Tips
+Vercel（バーセル）のダッシュボードからもデプロイ結果は確認できます。
+```
+https://vercel.com/dashboard
+```
+![image](https://user-images.githubusercontent.com/66664167/114531106-8bcdc080-9c86-11eb-9761-0c1ec3e2b292.png)
