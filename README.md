@@ -2,6 +2,7 @@
 ### ⑴初めに
 1. 当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。
 ![image](https://user-images.githubusercontent.com/66664167/114502898-71381f00-9c67-11eb-80a2-f4cd1eeba2bb.png)
+<br/><br/>
 
 ### ⑵WebARの作成
 #### Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。
@@ -31,7 +32,7 @@
 今回は以下のタグを使用しています。
 * a-scene・・・シーンと呼ばれる部分です。ARを表現するものは全てこのタグ内に記載する必要があります。
 * a-text・・・カメラ上にtext文字を表示するタグです。
-
+<br/><br/>
 
 ### ⑶スマートフォン上から簡単にアクセスするために、QRコード化しよう
 #### 手順⑵で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下のような構造を作成します。
@@ -61,18 +62,22 @@
 </html>
 ```
 4. 張り付けたコードの★★★の部分を⑴手順で作成したWebARのHTMLファイル名（ar.html）に置き換えます。<br>このコードは、必要なライブラリをscriptタグ（51-52行目）で読み込んで、jQueryで55行目に指定したURLをQRコード化させています。<br>あらかじめ、クローン（またはDownloadZip）したフォルダにはQRコードのライブラリを入れてますので、今回はscriptタグの記述のみで可能となります。
+<br/><br/>
 
+***
 # 【Step2】Vercel（バーセル）を使ったサーバーレスデプロイをやってみよう
 ### ⑴Vercel（バーセル）とは・・・
 Vercelはフロントエンド向けのホスティングサービスで、無料プランでも利用可能です（100回/日までデプロイ可）<BR>
 Git（GitHub, GitLab, Bitbucket に対応）とVercel（バーセル）を連携させることができます。連携するとGit にプッシュされる度にデプロイすることも可能です。<BR>
 また、```now```というコマンドで簡単にデプロイできる点も魅力です。
+<br/><br/>
 
 ### ⑵Vercel（バーセル）のアカウント登録
 1. サーバーレスデプロイを使うには、Vercel（バーセル）のアカウント登録が必要ですので、以下からアクセスしてください。<BR>
 　https://vercel.com/signup
 2. 「Continue with GitHub」から、Githubアカウントでログインしてください。
 ![image](https://user-images.githubusercontent.com/66664167/114530379-d7cc3580-9c85-11eb-9438-4a97b98e69ff.png)
+<br/><br/>
 
 ### ⑶ローカル環境からVercel（バーセル）へのログイン
 1. CUI（コマンドプロンプト/ターミナル）を起動してください。
@@ -99,7 +104,7 @@ now login
 
 4. 登録メールアドレスにログイン確認が求められるので、「VERIFY」を押してください。
 ![image](https://user-images.githubusercontent.com/66664167/114528562-17921d80-9c84-11eb-8f71-959fcfc9e6df.png)
-
+<br/><br/>
 
 ### ⑷デプロイの実施
 1. 以下コマンドを実行し、デプロイしましょう。<br>※カレントディレクトリにあるファイルがデプロイされますので、今いるディレクトリが正しいか注意してください。
@@ -117,19 +122,21 @@ now
 * 「Want to override the settings?」（設定情報の引き継ぎ）<BR>　　→　```N```を入力しEnterを押してください。
 4. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
-5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。
-
-
+5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを表示させてみましょう。
+<br/><br/>
+	
+***
 # 【Step3】応用編：マーカーベースのWebARを作ってみよう
 #### マーカーベースは、特定のテキストや画像を認識設定し、カメラがそれを認識するとARの内容が表示される仕組みです。
 1. 以下にアクセスし、マーカーベースで認識させるデータを作成します。
 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 
 2. 「UPLOAD」ボタンを押し、認識させたい好きな画像をアップロードしてください。
-![image](https://user-images.githubusercontent.com/66664167/114805997-f4c84c00-9dde-11eb-9ef4-4cacf6dbad50.png)
+![image](https://user-images.githubusercontent.com/66664167/114809489-3e1b9a00-9de5-11eb-9541-399055d79b53.png)
 
-3. ダウンロードした.pptファイルを【Step1】の⑴でクローンしたパスに２つのファイルを移動してください。
-4. ar.htmlのマーカーベースを実現するには、a-textタグをa-makerタグで囲みましょう。<br>また、文字の確度調整が必要なのでrotationを-90に指定します。<BR>その他、colorを変更して文字色を変えたり、patternを変えて表示位置を変えても構いません。
+3. 「DOWNLOAD MARKER」ボタンを押し、アップロードした画像の.pptファイルをダウンロードしてください。
+4. ダウンロードした.pptファイルの名前を<font color="Red">pattern.patt</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。
+5. ar.htmlのマーカーベースを実現するには、a-textタグをa-makerタグで囲みましょう。<br>また、文字の確度調整が必要なのでrotationを-90に指定します。<BR>その他、colorを変更して文字色を変えたり、patternを変えて表示位置を変えても構いません。
 
 ```
 <!DOCTYPE html>
@@ -146,7 +153,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
         <a-text position="0 1 -2"
          rotation="-90 0 0"
          value="meet up!!"
-         color="red"
+         color="blue"
          scale="1 1 1"></a-text>
        </a-marker>
     </a-scene>
@@ -160,10 +167,10 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 now
 ```
 
-6. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみよう。
+6. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
-7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで併せてみてください。
+7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで合わせてみてください。
 
 # Tips
 * a-seene内で使用できるタグは様々あります。動画・音声、画像等、表示したい内容によってタグは違うので注意してください。使用出来るタグは以下公式ページよりご確認ください。
