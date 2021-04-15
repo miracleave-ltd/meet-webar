@@ -172,9 +172,11 @@ now
 6. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
-7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで合わせてみてください。
+7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみましょう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで合わせてみてください。
 ![image](https://user-images.githubusercontent.com/66664167/114810999-35789300-9de8-11eb-8487-d3c4f88e1b9d.png)
-
+<br/><br/>
+	
+***
 # Tips
 * a-seene内で使用できるタグは様々あります。動画・音声、画像等、表示したい内容によってタグは違うので注意してください。使用出来るタグは以下公式ページよりご確認ください。
 https://aframe.io/docs/1.2.0/primitives/a-box.html
