@@ -154,7 +154,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
       <a-marker type="pattern" url="pattern.patt">
         <a-text position="0 1 -2"
          rotation="-90 0 0"
-         value="meet up!!"
+         value="my,dogs!!^^"
          color="blue"
          scale="1 1 1"></a-text>
        </a-marker>
