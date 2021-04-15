@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**目次**
+**Table of Contents**
 
 - [【Step1】WebARを作成しよう](#step1webar%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86)
     - [⑴初めに](#%E2%91%B4%E5%88%9D%E3%82%81%E3%81%AB)
