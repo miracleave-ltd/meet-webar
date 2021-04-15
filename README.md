@@ -1,6 +1,6 @@
 # 【Step1】WebARを作成しよう
 ### ⑴初めに
-1. 当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。<br/>
+1. 当ページの上部から当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/114502898-71381f00-9c67-11eb-80a2-f4cd1eeba2bb.png)
 <br/><br/>
 
