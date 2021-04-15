@@ -1,3 +1,6 @@
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 # 【Step1】WebARを作成しよう
 ### ⑴初めに
 1. 当ページの上部から当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。<br/>
