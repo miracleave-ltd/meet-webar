@@ -1,7 +1,7 @@
 # meet-webar
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**目次**
+**Table of Contents**
 
 - [【Step1】WebARを作成しよう](#step1webar%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86)
     - [⑴初めに](#%E2%91%B4%E5%88%9D%E3%82%81%E3%81%AB)
@@ -14,6 +14,7 @@
     - [⑷デプロイの実施](#%E2%91%B7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E5%AE%9F%E6%96%BD)
 - [【Step3】マーカーベースのWebARを作ってみよう](#step3%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AEwebar%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
 - [Tips](#tips)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ***
