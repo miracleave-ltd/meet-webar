@@ -123,6 +123,7 @@ now
 4. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
 5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを表示させてみましょう。
+![image](https://user-images.githubusercontent.com/66664167/114810914-02ce9a80-9de8-11eb-870e-894ff1175198.png)
 <br/><br/>
 	
 ***
@@ -136,7 +137,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 
 3. 「DOWNLOAD MARKER」ボタンを押し、アップロードした画像の.pptファイルをダウンロードしてください。
 4. ダウンロードした.pptファイルの名前を<font color="Red">pattern.patt</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。
-5. ar.htmlのマーカーベースを実現するには、a-textタグをa-makerタグで囲みましょう。<br>また、文字の確度調整が必要なのでrotationを-90に指定します。<BR>その他、colorを変更して文字色を変えたり、patternを変えて表示位置を変えても構いません。
+5. ar.htmlのマーカーベースを実現するには、a-textタグをa-makerタグで囲みましょう。<br>文字の確度調整が必要なのでrotationを-90に指定します。<BR>文字色（color）や、テキスト（value）、表示位置（pattern）を自由に変更しても良いです。
 
 ```
 <!DOCTYPE html>
@@ -171,6 +172,7 @@ now
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
 7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで合わせてみてください。
+![image](https://user-images.githubusercontent.com/66664167/114810999-35789300-9de8-11eb-8487-d3c4f88e1b9d.png)
 
 # Tips
 * a-seene内で使用できるタグは様々あります。動画・音声、画像等、表示したい内容によってタグは違うので注意してください。使用出来るタグは以下公式ページよりご確認ください。
