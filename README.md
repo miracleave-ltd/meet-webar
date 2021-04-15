@@ -123,6 +123,7 @@ now
 4. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
 5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを表示させてみましょう。
+
 ![image](https://user-images.githubusercontent.com/66664167/114810914-02ce9a80-9de8-11eb-870e-894ff1175198.png)
 <br/><br/>
 	
