@@ -6,7 +6,7 @@
 ### ⑵WebARの作成
 #### Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。
 1. WebARのコードを記述するために、ar.htmlという名前の空ファイルを作成してください。
-2. 作成したar.htmlに、以下コードを張り付けましょう。
+2. 作成したar.htmlに、以下コードを張り付けましょう。<BR>WebARには、画像や3D、そしてアニメーションの表示が可能ですが、今回はテキストを表示してみます。
 ```
 <!DOCTYPE html>
 <html>
@@ -14,32 +14,28 @@
     <meta charset="utf-8" />
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    <title>WebAR</title>
+    <title>mirameetvol15</title>
   </head>
   <body>
     <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
-      <a-text
-        value="ようこそ！mira meetへ！！"
-        font="custom-msdf.json"
-        font-image="custom.png"
-        negate="false"
-        scale="2 2 1"
-        position="0 1 -4"
-        color="red">
-      </a-text>
+        <a-text position="0 1 -2"
+         rotation="0 0 0"
+         value="meet up!!"
+         color="red"
+         scale="1 1 1"></a-text>
     </a-scene>
   </body>
 </html>
 ```
 3. 上記コードは、A-frameとar.jsのライブラリを15-16行目で読み込むことで、body部にARの実現を可能する各タグが使用できます。
 今回は以下のタグを使用しています。
-* a-scene
-* a-text
+* a-scene・・・シーンと呼ばれる部分です。ARを表現するものは全てこのタグ内に記載する必要があります。
+* a-text・・・カメラ上にtext文字を表示するタグです。
 
 
-### ⑵スマートフォン上から簡単にアクセスするために、QRコード化しよう
-#### 手順⑴で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下図の構造を作成します。
-![image](https://user-images.githubusercontent.com/66664167/114798980-95177400-9dd1-11eb-8cbf-1d80edcc09af.png)
+### ⑶スマートフォン上から簡単にアクセスするために、QRコード化しよう
+#### 手順⑵で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下のような構造を作成します。
+![image](https://user-images.githubusercontent.com/66664167/114800614-fbea5c80-9dd4-11eb-96cc-d22e9ce56d08.png)
 
 
 1. QRコード化のコードを記述するために、index.htmlという名前の空ファイルを作成してください。
@@ -64,7 +60,7 @@
 </body>
 </html>
 ```
-4. 張り付けたコードの★★★の部分を⑴手順で作成したWebARのHTMLファイル名（ar.html）に置き換えます。<br>このコードは、必要なライブラリをscriptタグ（51-52行目）で読み込んで、jQueryで55行目に指定したURLをQRコード化させています。<br>
+4. 張り付けたコードの★★★の部分を⑴手順で作成したWebARのHTMLファイル名（ar.html）に置き換えます。<br>このコードは、必要なライブラリをscriptタグ（51-52行目）で読み込んで、jQueryで55行目に指定したURLをQRコード化させています。<br>あらかじめ、クローン（またはDownloadZip）したフォルダにはQRコードのライブラリを入れてますので、今回はscriptタグの記述のみで可能となります。
 
 # 【Step2】Vercel（バーセル）を使ったサーバーレスデプロイをやってみよう
 ### ⑴Vercel（バーセル）とは・・・
@@ -105,7 +101,7 @@ now login
 ![image](https://user-images.githubusercontent.com/66664167/114528562-17921d80-9c84-11eb-8f71-959fcfc9e6df.png)
 
 
-### ⑷デプロイ
+### ⑷デプロイの実施
 1. 以下コマンドを実行し、デプロイしましょう。<br>※カレントディレクトリにあるファイルがデプロイされますので、今いるディレクトリが正しいか注意してください。
 
 ```
@@ -124,34 +120,54 @@ now
 5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。
 
 
-# 【Step3】応用編：WebARに好きな文字を表示してみよう
-#### 好きな文字をWebAR上に表示されるには、文字データを作成しその文字データをコードに埋め込みます。
-1. 文字データを作成する、以下サイトにアクセスしましょう。
-https://msdf-bmfont.donmccurdy.com/
+# 【Step3】応用編：マーカーベースのWebARを作ってみよう
+#### マーカーベースは、特定のテキストや画像を認識設定し、カメラがそれを認識するとARの内容が表示される仕組みです。
+1. 以下にアクセスし、マーカーベースで認識させるデータを作成します。
+https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 
-2. 「2. Select character set」の欄に表示させたい文字を入力し、「CREATE MSDF」ボタンを押してください。
-![image](https://user-images.githubusercontent.com/66664167/114529479-f2ea7580-9c84-11eb-9fa0-4a070e0339a2.png)
+2. 「UPLOAD」ボタンを押し、認識させたい好きな画像をアップロードしてください。
+![image](https://user-images.githubusercontent.com/66664167/114805997-f4c84c00-9dde-11eb-9ef4-4cacf6dbad50.png)
 
-3. custom-msdf.zipがダウンロードされますので、zipファイルを展開してください。
-4. 展開した中に、以下2ファイルがあると思いますので、【Step1】の⑴でクローンしたパスに２つのファイルを移動してください。<BR>※【Step1】の⑴でクローンしたパスに、既に同じファイルが存在するかと思いますが上書きで大丈夫です。
-* custom.png
-* custom-msdf.json
-6. Step1で作成したar.htmlをテキストエディタで開き、以下をvalue、scale、positionを修正してみましょう。
-* value（144行目）
-* scale（150行目）
-* position（151行目）
+3. ダウンロードした.pptファイルを【Step1】の⑴でクローンしたパスに２つのファイルを移動してください。
+4. ar.htmlのマーカーベースを実現するには、a-textタグをa-makerタグで囲みましょう。<br>また、文字の確度調整が必要なのでrotationを-90に指定します。<BR>その他、colorを変更して文字色を変えたり、patternを変えて表示位置を変えても構いません。
 
-4. 以下コマンドを実行し、再デプロイをしてみましょう。<BR>初回以降のデプロイはコマンド一つで簡単に実施出来ます。
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <title>WebAR</title>
+  </head>
+  <body>
+    <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
+      <a-marker type="pattern" url="pattern.patt">
+        <a-text position="0 1 -2"
+         rotation="-90 0 0"
+         value="meet up!!"
+         color="red"
+         scale="1 1 1"></a-text>
+       </a-marker>
+    </a-scene>
+  </body>
+</html>
+```
+	
+5. 以下コマンドを実行し、再デプロイをしてみましょう。<BR>初回以降のデプロイはコマンド一つで簡単に実施出来ます。
 
 ```
 now
 ```
 
-5. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみよう。
+6. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみよう。
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
+7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで併せてみてください。
 
 # Tips
+* a-seene内で使用できるタグは様々あります。動画・音声、画像等、表示したい内容によってタグは違うので注意してください。使用出来るタグは以下公式ページよりご確認ください。
+https://aframe.io/docs/1.2.0/primitives/a-box.html
 * Vercel（バーセル）のダッシュボードからもデプロイ結果は確認できます。
 ```
 https://vercel.com/dashboard
