@@ -26,7 +26,7 @@
 <br/><br/>
 
 ### ⑵WebARの作成
-#### Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。
+Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。<br/>
 1. 【Step1】の⑴でクローンしたパスを開きます。<br/>（例：C:\workspace\miracleave\meetup\meet-webar）
 2. 開いたフォルダ直下に、WebARのコードを記述するために、ar.htmlという名前の空ファイルを作成してください。
 3. 作成したar.htmlに、以下コードを張り付けましょう。<BR>WebARには、画像や3D、そしてアニメーションの表示が可能ですが、今回はテキストを表示してみます。
@@ -57,7 +57,7 @@
 <br/><br/>
 
 ### ⑶スマートフォンから簡単にアクセスするために、WebARのページをQRコード化しよう
-#### 手順⑵で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下のような構造を作成します。<br/>
+手順⑵で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下のような構造を作成します。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/114813727-a8d0d380-9ded-11eb-9f83-a1e5ea6dbbde.png)
 
 1. 先ほどと同様に【Step1】の⑴でクローンしたパス直下に、QRコード化のコードを記述するために、index.htmlという名前の空ファイルを作成してください。
@@ -152,7 +152,8 @@ now
 	
 ***
 # 【Step3】マーカーベースのWebARを作ってみよう
-#### マーカーベースは、特定のテキストや画像を認識設定し、カメラがそれを認識するとARの内容が表示される仕組みです。先ほど作成したテキストを表示するWebARをマーカーベース化してみましょう。
+マーカーベースは、特定のテキストや画像を認識設定し、カメラがそれを認識するとARの内容が表示される仕組みです。先ほど作成したテキストを表示するWebARをマーカーベース化してみましょう。
+<br/>
 1. 以下にアクセスし、マーカーベースで認識させるデータを作成します。<br/>
 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 
