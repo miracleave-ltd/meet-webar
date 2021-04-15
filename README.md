@@ -15,7 +15,7 @@
 - [Tips](#tips)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
+***
 # 【Step1】WebARを作成しよう
 ### ⑴初めに
 1. 当ページの上部から当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。<br/>
