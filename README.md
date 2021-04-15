@@ -1,12 +1,12 @@
 # 【Step1】WebVRを作成しよう
-### ⑴初めに・・・
+### ⑴初めに
 1. 当リポジトリをGitでクローン、またはDownloadZipしローカル上の任意フォルダで展開してください。
 ![image](https://user-images.githubusercontent.com/66664167/114502898-71381f00-9c67-11eb-80a2-f4cd1eeba2bb.png)
 
 ### ⑵WebARの作成
 #### Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。
 1. WebARのコードを記述するために、ar.htmlという名前の空ファイルを作成してください。
-2. 作成したar.htmlに、以下コードを張り付けましょう。<br>このプログラムは、A-frameとar.jsのライブラリを読み込むことで、ARの実現を可能とします。
+2. 作成したar.htmlに、以下コードを張り付けましょう。
 ```
 <!DOCTYPE html>
 <html>
@@ -31,10 +31,15 @@
   </body>
 </html>
 ```
+3. 上記コードは、A-frameとar.jsのライブラリを15-16行目で読み込むことで、body部にARの実現を可能する各タグが使用できます。
+今回は以下のタグを使用しています。
+* a-scene
+* a-text
+
 
 ### ⑵スマートフォン上から簡単にアクセスするために、QRコード化しよう
 #### 手順⑴で作成した、WebARのHTMLファイルを読み込ませてQRコード化させるために、以下図の構造を作成します。
-![image](https://user-images.githubusercontent.com/66664167/114794979-8c6e7000-9dc8-11eb-9b01-77a8402ff3b2.png)
+![image](https://user-images.githubusercontent.com/66664167/114798980-95177400-9dd1-11eb-8cbf-1d80edcc09af.png)
 
 
 1. QRコード化のコードを記述するために、index.htmlという名前の空ファイルを作成してください。
@@ -107,13 +112,16 @@ now login
 now
 ```
 
-3. 「Sent up and deploy?」と求められるので```Y```を入力し、Enterを押してください。
-4.  ```ユーザー名```を入力し、Enterを押してください。
-5. 「Link to existing project?」と求められるので```N```を入力し、Enterを押してください。
-6. 「Want to override the settings?」と求められるので```N```を入力し、Enterを押してください。
-7. コマンド実行結果に、アクセス先が記載されているのでアクセスしてみよう。
+3. 初回デプロイのため、いくつかCUI上での確認が必要となりますので、以下の通り入力してください。※2回目以降のデプロイでは求められません。
+* 「Sent up and deploy?」（デプロイ元の確認）<BR>　　→　```Y```を入力し、Enterを押下。
+* 「Which scope do you want to deploy to?」（デプロイ先の確認）<BR>　　→　Enterを押下。
+* 「Link to existing project?」（既存プロジェクトとの連携の確認）<BR>　　→　```N```を入力し、Enterを押下。
+* 「What’s your project’s name?」（プロジェクト名の確認）<BR>　　→　Enterを押下。
+* 「In which directory is your code located?」（コードのディレクトリ確認）<BR>　　→　Enterを押下。
+* 「Want to override the settings?」（設定情報の引き継ぎ）<BR>　　→　```N```を入力しEnterを押してください。
+4. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみましょう。
 ![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
-8. QRコードをスマートフォンのカメラ機能で読み取って、ARを動かしてみよう。
+5. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみよう。
 
 
 # 【Step3】応用編：WebARに好きな文字を表示してみよう
@@ -128,35 +136,10 @@ https://msdf-bmfont.donmccurdy.com/
 4. 展開した中に、以下2ファイルがあると思いますので、【Step1】の⑴でクローンしたパスに２つのファイルを移動してください。<BR>※【Step1】の⑴でクローンしたパスに、既に同じファイルが存在するかと思いますが上書きで大丈夫です。
 * custom.png
 * custom-msdf.json
-6. Step1で作成したar.htmlをテキストエディタで開き、以下を修正しましょう。
+6. Step1で作成したar.htmlをテキストエディタで開き、以下をvalue、scale、positionを修正してみましょう。
 * value（144行目）
 * scale（150行目）
 * position（151行目）
-```
-<!DOCTYPE html>
-<html>
-  <head>
-  <head>
-    <meta charset="utf-8" />
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    <title>WebAR</title>
-  </head>
-  <body>
-    <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
-      <a-text
-        value="ようこそ！mira meetへ！！"
-        font="custom-msdf.json"
-        font-image="custom.png"
-        negate="false"
-        scale="2 2 1"
-        position="0 1 -4"
-        color="red">
-      </a-text>
-    </a-scene>
-  </body>
-</html>
-```
 
 4. 以下コマンドを実行し、再デプロイをしてみましょう。<BR>初回以降のデプロイはコマンド一つで簡単に実施出来ます。
 
@@ -164,7 +147,7 @@ https://msdf-bmfont.donmccurdy.com/
 now
 ```
 
-5. コマンド実行結果に、アクセス先が記載されているのでアクセスしてみよう。
+5. コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてみよう。
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
 
@@ -175,4 +158,9 @@ https://vercel.com/dashboard
 ```
 ![image](https://user-images.githubusercontent.com/66664167/114531106-8bcdc080-9c86-11eb-9761-0c1ec3e2b292.png)
 
-* Vercel（バーセル）とGitHubリポジトリとの連携も可能です。
+* ダッシュボードのNew Projectから、GitHubリポジトリとの連携も可能です。
+![image](https://user-images.githubusercontent.com/66664167/114799076-cabc5d00-9dd1-11eb-9fe9-35f4801188c7.png)
+![image](https://user-images.githubusercontent.com/66664167/114799098-d576f200-9dd1-11eb-92d6-1309dc70a01b.png)
+
+* デプロイしたプロジェクトは、プロジェクトのSettings > Advanced > Delete Projectより削除可能です。
+![image](https://user-images.githubusercontent.com/66664167/114799309-50d8a380-9dd2-11eb-8c71-5ad5a5097503.png)
