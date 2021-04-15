@@ -131,6 +131,7 @@ now
 # 【Step3】応用編：マーカーベースのWebARを作ってみよう
 #### マーカーベースは、特定のテキストや画像を認識設定し、カメラがそれを認識するとARの内容が表示される仕組みです。
 1. 以下にアクセスし、マーカーベースで認識させるデータを作成します。
+
 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 
 2. 「UPLOAD」ボタンを押し、認識させたい好きな画像をアップロードしてください。
@@ -180,6 +181,7 @@ now
 ***
 # Tips
 * a-seene内で使用できるタグは様々あります。動画・音声、画像等、表示したい内容によってタグは違うので注意してください。使用出来るタグは以下公式ページよりご確認ください。
+
 https://aframe.io/docs/1.2.0/primitives/a-box.html
 * Vercel（バーセル）のダッシュボードからもデプロイ結果は確認できます。
 ```
