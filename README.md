@@ -143,7 +143,6 @@ now
 ![image](https://user-images.githubusercontent.com/66664167/114531193-a2741780-9c86-11eb-9c50-0f0851695952.png)
 
 4. PC上に表示されたQRコードをスマートフォンのカメラ機能で読み取って、WebARページの表示とARを表示させてみましょう。<br/>
-![image](https://user-images.githubusercontent.com/66664167/114810914-02ce9a80-9de8-11eb-870e-894ff1175198.png)
 <br/><br/>
 	
 ***
@@ -198,7 +197,6 @@ now
 ![image](https://user-images.githubusercontent.com/66664167/114530887-53c67d80-9c86-11eb-8e17-7dd56d6ce218.png)
 
 7. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみましょう。<BR>【Step3】の手順2.で読み込ませた画像をカメラで合わせてみてください。<br/>
-![image](https://user-images.githubusercontent.com/66664167/114810999-35789300-9de8-11eb-8487-d3c4f88e1b9d.png)
 <br/><br/>
 	
 ***
