@@ -47,7 +47,7 @@ Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-
            position="0 1 -2"
            rotation="-90 0 0"
            value="meet up!vol.15!"
-           color="blue"
+           color="red"
            scale="1 1 1"
 	></a-text>
        </a-marker>
@@ -78,8 +78,6 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 7. アップロードが出来たら、中央部上にある「DOWNLOAD MARKER」ボタンを押し、アップロードした画像の.pptファイルをダウンロードしてください。
 
 8. ダウンロードした.pptファイルの名前を<font color="Red">pattern.patt</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。
-<br/>※配置後の例<br/>
-![image](https://user-images.githubusercontent.com/66664167/115099979-80271600-9f74-11eb-8012-a3ed3654712d.png)
 <br/><br/>
 
 ***
