@@ -20,12 +20,12 @@
 <br/>※展開後のディレクトリ例<br/>
 　・クローンした場合：C:\workspace\miracleave\meetup\meet-webar<br/>
 　・DownloadZIPした場合：C:\workspace\miracleave\meetup\meet-webar-main<br/>
-![image](https://user-images.githubusercontent.com/66664167/115100522-2d4f5d80-9f78-11eb-975d-2e30d4c3b389.png)
+![image](https://user-images.githubusercontent.com/66664167/115102750-f2552600-9f87-11eb-82c1-1f19312882c8.png)
 <br/><br/>
 
 ### ⑵WebARの作成
 Web上でARを可能とするには、Google社製model-viewerとMozilla社製A-frameがありますが、今回はA-frameを基に作っていきます。<br/>
-1. 【Step1】の⑴でクローン、またはDownloadZIPで展開したパスを、エクスプローラーまたはFinderで開きます。
+1. 【Step1】の⑴でクローン、またはDownloadZIPで展開したパスを、WindowsのエクスプローラーまたはMacのFinderで開きます。
 
 2. WebARのコードを記述するために、開いたフォルダ直下に以下のar-marker.htmlをテキストエディタで開いてください。
 
@@ -83,8 +83,8 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 <br/><br/>
 
 ***
-# 【Step2】Vercel（バーセル）を使ったサーバーレスデプロイをやってみよう
-### ⑴Vercel（バーセル）とは・・・
+# 【Step2】準備が出来ましたので、Vercel（バーセル）を使ってデプロイをしてみましょう
+### ⑴そもそも、Vercel（バーセル）とは・・・
 Vercelはフロントエンド向けのホスティングサービスで、無料プランでも利用可能です（100回/日までデプロイ可）<br/>
 Git（GitHub, GitLab, Bitbucket に対応）とVercel（バーセル）を連携させることができます。連携するとGit にプッシュされる度にデプロイすることも可能です。<br/>
 また、```now```というコマンドで簡単にデプロイできる点も魅力です。
@@ -149,14 +149,19 @@ now
 <br/><br/>
 	
 ***
-# 【Step3】パノラマ画像で360°回転が出来るようなWebARを作ってみよう
+# 【Step3】画像を360°回転させるWebARを作ってみよう
 Step2ではa-textを使ったテキストの文字表示を行いましたが、A-Frameではa-text以外にも様々なタグが用意されています。次は、画像を360°回転が出来るWebARを作成してみます。
 <br/>
-1. 【Step1】の⑴でクローン、またはDownloadZIPで展開したパスを、エクスプローラーまたはFinderで開きます。
 
-2. WebARのコードを記述するために、開いたフォルダ直下に以下のar-panorama.htmlをテキストエディタで開いてください。
+1. 【Step1】の⑴でクローン、またはDownloadZIPで展開したパスを、WindowsのエクスプローラーまたはMacのFinderで開きます。
 
-3. 画像を360°回転させるには、a-skyというタグを使用します。開いたar-panorama.htmlに以下コードを張り付けましょう。※貼り付け後必ず保存してください。
+2. 360°回転させたい画像を用意し、PC上にダウンロードしてください。
+
+3. 用意した画像名を<font color="Red">texture.png</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。
+
+4. 360°回転のWebARのコードを記述するために、開いたフォルダ直下に以下のar-panorama.htmlをテキストエディタで開いてください。
+
+5. 画像を360°回転させるには、a-skyというタグを使用します。開いたar-panorama.htmlに以下コードを張り付けましょう。※貼り付け後必ず保存してください。
 
 ```
 <!DOCTYPE html>
@@ -170,7 +175,7 @@ Step2ではa-textを使ったテキストの文字表示を行いましたが、
   <body>
     <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
       <a-assets>
-        <img id="sky" src="texture.jpg" />
+        <img id="sky" src="texture.png" />
       </a-assets>
       <a-sky
         id="ar-panorama"
@@ -182,7 +187,7 @@ Step2ではa-textを使ったテキストの文字表示を行いましたが、
 ```
 
 
-4. 上記コードは、、、、上記3.の手順貼り付けたコードから、a-skyタグ内の以下オプションを変えてみましょう。※変更後は必ず保存してください。
+4. 上記コードは、です。上記3.の手順貼り付けたコードから、a-skyタグ内の以下オプションを変えてみましょう。※変更後は必ず保存してください。
 * radius ・・・表示するテキストが画面上のどの位置に配置するか指定できます。x y zの形式で指定します。
 
 5. 以下コマンドを実行し、再デプロイをしてみましょう。<BR>初回以降のデプロイはコマンド一つで簡単に実施出来ます。
