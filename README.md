@@ -1,16 +1,10 @@
 # meet-webar
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+**目次**
 
 - [【Step1】WebARを作成しよう](#step1webar%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86)
-    - [⑴初めに](#%E2%91%B4%E5%88%9D%E3%82%81%E3%81%AB)
-    - [⑵WebARの作成](#%E2%91%B5webar%E3%81%AE%E4%BD%9C%E6%88%90)
 - [【Step2】準備が出来たので、Vercel（バーセル）を使ってデプロイをしてみましょう](#step2%E6%BA%96%E5%82%99%E3%81%8C%E5%87%BA%E6%9D%A5%E3%81%9F%E3%81%AE%E3%81%A7vercel%E3%83%90%E3%83%BC%E3%82%BB%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86)
-    - [⑴そもそも、Vercel（バーセル）とは・・・](#%E2%91%B4%E3%81%9D%E3%82%82%E3%81%9D%E3%82%82vercel%E3%83%90%E3%83%BC%E3%82%BB%E3%83%AB%E3%81%A8%E3%81%AF%E3%83%BB%E3%83%BB%E3%83%BB)
-    - [⑵Vercel（バーセル）のアカウント登録](#%E2%91%B5vercel%E3%83%90%E3%83%BC%E3%82%BB%E3%83%AB%E3%81%AE%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E7%99%BB%E9%8C%B2)
-    - [⑶ローカル環境からVercel（バーセル）へのログイン](#%E2%91%B6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%92%B0%E5%A2%83%E3%81%8B%E3%82%89vercel%E3%83%90%E3%83%BC%E3%82%BB%E3%83%AB%E3%81%B8%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3)
-    - [⑷デプロイの実施](#%E2%91%B7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E5%AE%9F%E6%96%BD)
 - [【Step3】画像を360°回転させるWebARを作ってみよう](#step3%E7%94%BB%E5%83%8F%E3%82%92360%C2%B0%E5%9B%9E%E8%BB%A2%E3%81%95%E3%81%9B%E3%82%8Bwebar%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
 - [Tips](#tips)
     - [a-frameについて](#a-frame%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
