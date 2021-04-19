@@ -80,7 +80,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 <br/><br/>
 
 ***
-# 【Step2】準備が出来ましたので、Vercel（バーセル）を使ってデプロイをしてみましょう
+# 【Step2】準備が出来たので、Vercel（バーセル）を使ってデプロイをしてみましょう
 ### ⑴そもそも、Vercel（バーセル）とは・・・
 Vercelはフロントエンド向けのホスティングサービスで、無料プランでも利用可能です（100回/日までデプロイ可）<br/>
 Git（GitHub, GitLab, Bitbucket に対応）とVercel（バーセル）を連携させることができます。連携するとGit にプッシュされる度にデプロイすることも可能です。<br/>
