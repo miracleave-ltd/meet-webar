@@ -75,7 +75,7 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 7. アップロードが出来たら、中央部上にある「DOWNLOAD MARKER」ボタンを押し、アップロードした画像の.pptファイルをダウンロードしてください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115134611-9a342780-a04c-11eb-85eb-893fea51550c.png)
 
-8. ダウンロードした.pptファイルの名前を<font color="Red">pattern.patt</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。<br/>
+8. ダウンロードした.pattファイルの名前を<font color="Red">pattern.patt</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115134644-ccde2000-a04c-11eb-8242-659dc1ae8963.png)
 <br/><br/>
 
@@ -119,13 +119,13 @@ now login
 5. CUI上で登録するアカウントが聞かれますので、Githubに登録しているメールアドレスを入力してください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115134456-32c9a800-a04b-11eb-8521-cdfed4d3e378.png)
 
-7. Githubに登録しているメールアドレスにログイン確認が求めるメールが送信されますので、登録しているメールの受信ボックスを確認してください。（以下、受信例）<br/>
+6. Githubに登録しているメールアドレスにログイン確認メールが送信されますので、登録しているメールの受信ボックスを確認してください。（以下、受信例）<br/>
 ![image](https://user-images.githubusercontent.com/66664167/114812872-db79cc80-9deb-11eb-9147-1afc8a165403.png)
 
-8. 登録メールアドレスにログイン確認が求められるので、「VERIFY」を押してください。<br/>
+7. 登録メールアドレスにログイン確認が求められるので、「VERIFY」を押してください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115134477-61e01980-a04b-11eb-9444-e700aa5a2c92.png)
 
-9. CUI上でも待機状態から進み、ログインが出来ていることを確認します。<br/>
+8. CUI上でも待機状態から進み、ログインが出来ていることを確認します。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115133417-0873ec80-a043-11eb-80c3-06e409ba2674.png)
 <br/><br/>
 
@@ -142,7 +142,7 @@ now
 * 「Link to existing project?」（既存プロジェクトとの連携の確認）<BR>　　→　```N```を入力し、Enterを押下。
 * 「What’s your project’s name?」（プロジェクト名の確認）<BR>　　→　Enterを押下。
 * 「In which directory is your code located?」（コードのディレクトリ確認）<BR>　　→　Enterを押下。
-* 「Want to override the settings?」（設定情報の引き継ぎ）<BR>　　→　```N```を入力しEnterを押してください。
+* 「Want to override the settings?」（設定情報の引き継ぎ）<BR>　　→　```N```を入力しEnterを押下。
 
 3. 以下、コマンド実行結果の例ですが、コマンド実行結果の「Production: https～」から始まる行に、デプロイしたアクセス先が記載されているのでアクセスしてください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115134489-791f0700-a04b-11eb-97a7-830079d21f03.png)
@@ -212,10 +212,9 @@ now
 https://aframe.io/docs/1.2.0/primitives/a-box.html
 ***
 ### Vercel（バーセル）について
-* Vercel（バーセル）のダッシュボードからもデプロイ結果は確認できます。
-```
+* Vercel（バーセル）のダッシュボードからもデプロイ結果は確認できます。<br/>
 https://vercel.com/dashboard
-```
+
 ![image](https://user-images.githubusercontent.com/66664167/114531106-8bcdc080-9c86-11eb-9761-0c1ec3e2b292.png)
 ***
 * ダッシュボードのNew Projectから、GitHubリポジトリとの連携も可能です。<br/>
