@@ -158,7 +158,7 @@ Step1ではa-textを使ったテキストの文字表示を行いましたが、
 
 1. 【Step1】の⑴でクローン、またはDownloadZIPで展開したパスを、WindowsのエクスプローラーまたはMacのFinderで開きます。
 
-2. 360°回転させたい画像を用意し、PC上にダウンロードしてください。<br/>※AR用の画像もあります。<br/>
+2. 360°回転させたい画像を用意し、PC上にダウンロードしてください。<br/>AR用の画像もあります。今回は以下サイトの画像を使用します。<br/>
 https://www.flickr.com/groups/equirectangular/
 
 3. 用意した画像名を<font color="Red">texture.png</font>に変更し、【Step1】の⑴でクローンしたパスに直下に配置してください。
