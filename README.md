@@ -204,6 +204,7 @@ now
 8. PC上に表示されたQRコードを、スマートフォンのカメラ機能で読み取って、WebARページの表示とARを動かしてみましょう。デバイスモーションが求められたら許可（Allow）を押してください。<br/>
 ![image](https://user-images.githubusercontent.com/66664167/115649402-30749000-a362-11eb-912d-1ec949ac5edb.png)
 <br/>
+
 ![image](https://user-images.githubusercontent.com/66664167/115134334-39a3eb00-a04a-11eb-9a9e-abddcb4fe059.png)
 <br/><br/>
 	
