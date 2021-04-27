@@ -172,7 +172,7 @@ https://www.flickr.com/groups/equirectangular/
 <html>
   <head>
     <meta charset="utf-8" />
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <title>meet up vol.15</title>
   </head>
